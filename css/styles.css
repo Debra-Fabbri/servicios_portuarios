@@ -1,0 +1,694 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* FONTS FAMILY A UTILIZAR 
+
+    PARA LOS HEADERS
+    font-family: 'Bebas Neue', cursive;
+
+    PARA LOS PARRAFOS
+    font-family: 'Playfair Display', serif;
+
+    PARA EL BODY - TITULOS/SUBTITULOS 
+    font-family: 'Raleway', sans-serif;
+
+*/
+
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: ghostwhite;
+}
+
+/*
+.contenedor {
+    padding: 50px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+*/
+                /*Header*/
+
+        /*Barra de navegacion*/
+
+#btn-menu {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+        /*componentes para titulo e imagen*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #000000; 
+    background: -webkit-linear-gradient(to bottom, hsla(0, 0%, 26%, 0.24), hsla(0, 0%, 0%, 0.89)), url(../assets/barcoherosection.jpg); 
+    background: linear-gradient(to bottom, hsla(0, 0%, 26%, 0.24), hsla(0, 0%, 0%, 0.89)), url(../assets/barcoherosection.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+header .header__textos{
+    display: flex;
+    height: 245px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__textos h1 {
+    font-size: 50px;
+    color: #ffff;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.header__textos h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffff;
+    
+}
+
+.header__wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+            /*IMAGEN INDEX*/
+
+.separador__parrafo--Blanco {
+    color: #ffff;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+    font-size: 20px;
+    background-color: #035397;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.main .main-left{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.col-lg-6{
+    overflow: hidden;
+}
+
+            /*VIDEO INDEX*/
+
+.main .main-right{
+    background-color: #5089c6;
+    padding: 1rem 1.2rem;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0rem;
+}
+
+
+                /*FOOTER*/
+
+
+.footer {
+    background-color: #035397;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+}
+
+.footer-logo{
+    width:255px;
+    height: 150px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+    /* footer left*/
+
+.footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+}
+
+.footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .icons {
+    margin-top: 25px;
+}
+
+.footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+    
+    /* footer center*/
+
+.footer .footer-center {
+    width: 30%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+
+    /* footer right*/
+
+.footer .footer-right {
+    width: 35%;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer h2 span {
+    color: #0099ff;
+}
+
+.footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .menu a:hover {
+    color: #0099ff;
+}
+
+
+
+                /*NOSOTROS*/
+
+.equipo__titulo--grande{
+    margin: 1rem 1.2rem;
+    padding: 1rem 1.2rem;
+    text-align: center;
+}
+
+.equipo__titulo {
+    margin-top: 25px;
+}
+
+.equipo__miembro img{
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+                /*HISTORIA*/
+
+.contHistoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}               
+
+.contHo {  
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
+    grid-template-rows: 1fr 1.3fr 1fr 1.3fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". imA imB ."
+        ". imA imB ."
+        ". imC imD ."
+        ". imC imD ."
+        ". imE imF ."
+        ". imE imF .";
+    margin-bottom: 50px;
+}
+
+.imA { 
+    grid-area: imA; 
+    justify-self: center;
+}
+
+.imB { 
+    grid-area: imB; 
+    justify-self: center;
+}
+
+.imC { 
+    grid-area: imC; 
+    justify-self: center;
+}
+
+.imD { 
+    grid-area: imD; 
+    justify-self: center;
+}
+
+.imE { 
+    grid-area: imE; 
+    justify-self: center;
+}
+
+.imF { 
+    grid-area: imF; 
+    justify-self: center;
+}
+
+.med{
+    width:350px;
+    height: 250px;
+}
+
+
+
+.info {
+    position:absolute;
+    overflow:hidden;
+    width: 350px;
+    height: 250px;
+    background-color: hsla(0, 0%, 12%, 0.651);
+    opacity:0;
+    transition: opacity 0.3s;
+}
+
+.imagen:hover .info {
+    opacity:1;
+}
+
+.descripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 200px;
+    transition: margin-top 0.4s;
+    color: #fff;
+}
+
+.imagen:hover .descripcion {
+    margin-top: 75px;
+}
+
+                /*MISION y VISION*/
+
+.title-mvvp{
+    text-align: center;
+}
+
+.container-mvvp{
+    padding:20px;
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50%;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    border-radius:30px;
+}
+
+.carta {
+    font-size: 1.2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+                /*AGENCIAS NAVIERAS*/
+
+
+.cardsag-navieras{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    max-width: max-content;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url("../assets/exportacion.jpg")
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url("../assets/importacion.jpg");
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url("../assets/cabotaje.jpg");
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url("../assets/ambientecontrolado.jpg");
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+
+.card {
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 33.3%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+/*ACA USO GRID + FLEX*/
+
+.container-table {
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 60px;
+    border-radius:  16px;
+}
+
+.table__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #001e6c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.table__header{
+    font-family: 'Playfair Display', serif;
+    background: #035397;
+    color: #fff;
+}
+
+.table__header, .table__item{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+            /*REMOLCADORES MARITIMOS*/
+
+.zoom{
+    transition: transform .5s;
+    width: 100%;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.contenido-texto{
+    font-size: 20px;
+}
+
+.container-remolcadores{
+    margin: 10px;
+}
+
+            /*CONTACTO*/
+
+.form{
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 16px;
+    margin:auto;
+    padding: 56px 24px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    width: 100%;  
+}
+
+.class input {
+    font-size: 16px;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.form-input--message{
+    resize: none;
+    padding: 28px 16px;
+    margin-bottom: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 4px;
+}
+
+.formTitle {
+    text-align: center ;
+    margin-bottom: 30px;
+} 
+
+.Pais{
+    margin-bottom: 30px;
+}
+
+
+.formLimpiar:hover, .formEnviar:hover{
+    background-color: #ff584c;
+}
+
+
+                /* MEDIA QUERIES */
+
+/* Cuando la pantalla sea más chica que 480px 
+aplica estos estilos */
+/*
+@media (max-width: 480px) {
+    
+}
+
+
+/* Pero si mi pantalla es mayor a 480px 
+aplica estos estilos siempre y cuando 
+el tamaño sea menor a 768 px */
+
+
+@media (max-width: 768px) {
+    
+    .footer {
+        font-size: 16px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer .footer-center i {
+        margin-left: 0;
+    }
+    
+    .footer .about, .footer p{
+        font-size: max(1.2rem, 1.2vw);
+        /*font-size: clamp(1rem, 1.7rem, 1.9rem);*/
+    }
+    
+    .main .col-md-12{
+        text-align:center;
+        margin-top: 1rem;
+    }
+
+    .contHo {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". imA imA ."
+            ". imB imB ."
+            ". imC imC ."
+            ". imD imD ."
+            ". imE imE ."
+            ". imF imF .";
+        }
+
+    .container-mvvp{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}

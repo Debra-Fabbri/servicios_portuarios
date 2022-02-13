@@ -1,0 +1,160 @@
+@import "./media-queries";
+
+/*HTMLS CON IMPLEMENTACION DE LAS GRILLAS DE GRID Y CON COMBINACION DE FLEX*/
+
+/*HISTORIA*/
+.contHistoria {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+.contHo {
+	display: grid;
+	grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
+	grid-template-rows: 1fr 1.3fr 1fr 1.3fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: ". imA imB ." ". imA imB ." ". imC imD ." ". imC imD ." ". imE imF ." ". imE imF .";
+	margin-bottom: 50px;
+	@include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". imA imA ."
+            ". imB imB ."
+            ". imC imC ."
+            ". imD imD ."
+            ". imE imE ."
+            ". imF imF .";
+    }
+}
+.imA {
+	grid-area: imA;
+	justify-self: center;
+}
+.imB {
+	grid-area: imB;
+	justify-self: center;
+}
+.imC {
+	grid-area: imC;
+	justify-self: center;
+}
+.imD {
+	grid-area: imD;
+	justify-self: center;
+}
+.imE {
+	grid-area: imE;
+	justify-self: center;
+}
+.imF {
+	grid-area: imF;
+	justify-self: center;
+}
+.med {
+	width: 350px;
+	height: 250px;
+}
+
+.info {
+	position: absolute;
+	overflow: hidden;
+	width: 350px;
+	height: 250px;
+	background-color: hsla(0, 0%, 12%, 0.651);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.imagen {
+	&:hover {
+		.info {
+			opacity: 1;
+		}
+		.descripcion {
+			margin-top: 75px;
+		}
+	}
+}
+
+.descripcion {
+	font-size: 1rem;
+	text-align: center;
+	margin-top: 200px;
+	transition: margin-top 0.4s;
+	color: #fff;
+}
+
+
+/*MISION y VISION*/
+.title-mvvp {
+	text-align: center;
+}
+.container-mvvp {
+	padding: 20px;
+	width: 90%;
+	margin: 50px auto;
+	background: white;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 50%;
+	grid-column-gap: 15px;
+	grid-row-gap: 20px;
+	border-radius: 30px;
+	@include tablet{
+		display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+	}
+}
+.carta {
+	font-size: 1.2rem;
+	align-self: center;
+	justify-self: center;
+}
+
+/*TABLAS*/
+/*ACA USO GRID + FLEX*/
+
+.container-table {
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 60px;
+    border-radius:  16px;
+}
+
+.table__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #001e6c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.table__header{
+    font-family: 'Playfair Display', serif;
+    background: #035397;
+    color: #fff;
+}
+
+.table__header, .table__item{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

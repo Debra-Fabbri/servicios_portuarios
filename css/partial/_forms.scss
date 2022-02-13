@@ -1,0 +1,48 @@
+@import "./vars";
+/*HTMLS CON FORMULARIOS EN SU ESTRUCTURA*/
+
+/*NOSOTROS Y CONTACTO*/ 
+
+.form{
+    background-color: #fff;
+    width: $ancho*2;
+    max-width: 800px;
+    border-radius: 16px;
+    margin:auto;
+    padding: 56px 24px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.form__container {
+    width: $ancho*2;  
+}
+
+.class {
+	input {
+		font-size: $font-size+6;
+		padding: 12px 16px;
+		outline: none;
+		border: none;
+		border: 1px solid #bbb0b0;
+		border-radius: 4px;
+		margin-bottom: 30px;
+	}
+}
+
+.form-input--message{
+    resize: none;
+    padding: 28px 16px;
+    margin-bottom: 8px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 4px;
+}
+
+.form__Title {
+    text-align: center ;
+    margin-bottom: 30px;
+} 
+

@@ -1,0 +1,17 @@
+{
+  "name": "mi_proyecto",
+  "version": "1.0.0",
+  "description": "Paquete SASS mi proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles-sass.scss css/styles-sass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Debra Catherine Fabbri Lobos",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

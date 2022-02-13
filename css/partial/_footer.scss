@@ -1,0 +1,150 @@
+@import "./vars";
+@import "./media-queries";
+
+
+/* footer left*/
+/* footer center*/
+/* footer right*/
+.footer {
+	background-color: #035397;
+	width: $ancho*2;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: $font-size+6;
+	padding: 50px;
+	@include tablet{
+		font-size: $font-size*2;
+	}
+	.footer-left {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+		padding-right: 15px;
+		@include tablet{
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+	}
+	.footer-center {
+		display: inline-block;
+		vertical-align: top;
+		width: ($ancho)-20;
+		@include tablet{
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		i {
+			background-color: #33383b;
+			color: #ffffff;
+			font-size: ($font-size*2)+5;
+			width: 38px;
+			height: ($alto/3)-62;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 42px;
+			margin: 10px 15px;
+			vertical-align: middle;
+			@include tablet{
+				margin-left: 0;
+			}
+		}
+		i.fa-envelope {
+			font-size: $font-size+7;
+			line-height: 38px;
+		}
+		p {
+			display: inline-block;
+			color: #ffffff;
+			vertical-align: middle;
+			margin: 0;
+			
+			span {
+				display: block;
+				font-weight: normal;
+				font-size: $font-size+4;
+				line-height: 2;
+			}
+			a {
+				color: #0099ff;
+				text-decoration: none;
+			}
+		}
+	}
+	.footer-right {
+		display: inline-block;
+		vertical-align: top;
+		width: ($ancho)-15;
+		@include tablet{
+			display: block;
+			width: 100%;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+	}
+	.about {
+		line-height: 20px;
+		color: #ffffff;
+		font-size: ($font-size)+3;
+		font-weight: normal;
+		margin: 0;
+		@include tablet{
+			font-size: ($font-size)+8;
+		}
+		span {
+			display: block;
+			color: #ffffff;
+			font-size: ($font-size)+4;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+	}
+	.icons {
+		margin-top: 25px;
+		a {
+			display: inline-block;
+			width: 35px;
+			height:($alto/3)-65;
+			cursor: pointer;
+			background-color: #33383b;
+			border-radius: 2px;
+			font-size: $font-size*2;
+			color: #ffffff;
+			text-align: center;
+			line-height: 35px;
+			margin-right: 3px;
+			margin-bottom: 5px;
+		}
+	}
+	h2 {
+		color: #ffffff;
+		font-size: ($font-size*3)+6;
+		font-weight: normal;
+		margin: 0;
+		span {
+			color: #0099ff;
+		}
+	}
+	.menu {
+		color: #ffffff;
+		margin: 20px 0 12px;
+		padding: 0;
+		a {
+			display: inline-block;
+			line-height: 1.8;
+			text-decoration: none;
+			color: inherit;
+			&:hover {
+				color: #0099ff;
+			}
+		}
+	}
+}
+.footer-logo {
+	width: 255px;
+	height: ($alto/2);
+}
