@@ -18,6 +18,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    overflow: hidden;
 
     & .header__textos {
         display: flex;
