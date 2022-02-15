@@ -585,8 +585,10 @@ header {
         font-size: 14px;
         line-height: 2; }
       .footer .footer-center p a {
-        color: #0099ff;
+        color: #ffffff;
         text-decoration: none; }
+        .footer .footer-center p a:hover {
+          color: #FFAA4C; }
   .footer .footer-right {
     display: inline-block;
     vertical-align: top;

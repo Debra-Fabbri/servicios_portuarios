@@ -70,8 +70,11 @@
 				line-height: 2;
 			}
 			a {
-				color: #0099ff;
+				color: #ffffff;
 				text-decoration: none;
+				&:hover {
+					color:#FFAA4C;
+				}
 			}
 		}
 	}
