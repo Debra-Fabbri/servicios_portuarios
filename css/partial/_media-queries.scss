@@ -1,11 +1,48 @@
-@mixin tablet {
-    @media (max-width: 768px) {
-        @content;
+/*Screen sizes*/
+
+$xxs: 575px;
+
+$xs: 767px;
+
+$sm: 991px;
+
+$md: 1200px;
+
+$lg: 1400px;
+
+/*y dsp y hice un mixin:*/
+
+@mixin breakpoint($class) {
+
+    @if $class == xxs {
+        @media (max-width: $xxs) { @content; }
+    }
+
+
+    @if $class == xs {
+        @media (max-width: $xs) { @content; }
+    }
+
+
+    @else if $class == sm {
+        @media (max-width: $sm) { @content; }
+    }
+
+
+    @else if $class == md {
+        @media (max-width: $md) { @content; }
+    }
+
+
+    @else if $class == lg {
+        @media (max-width: $lg) { @content; }
     }
 }
 
-@mixin movil {
-    @media (max-width: 480px) {
-        @content;
-    }
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/ 
+
+@include breakpoint(xxs){
+
 }
+
+

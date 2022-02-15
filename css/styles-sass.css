@@ -8,6 +8,9 @@ body {
   background-color: ghostwhite; }
 
 /*width*/
+/*Screen sizes*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*width*/
 #btn-menu {
   color: #FFF;
@@ -48,6 +51,9 @@ header {
     width: 100%; }
 
 /*width*/
+/*Screen sizes*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
 .parrafo--blanco {
   color: white; }
 
@@ -66,7 +72,7 @@ header {
   margin-bottom: 10px;
   font-size: 20px; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main .col-md-12 {
     text-align: center;
     margin-top: 1rem; } }
@@ -80,6 +86,9 @@ header {
   font-size: 20px;
   margin-bottom: 0rem; }
 
+/*Screen sizes*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*HTMLS CON IMPLEMENTACION DE LAS GRILLAS DE GRID Y CON COMBINACION DE FLEX*/
 /*HISTORIA*/
 .contHistoria {
@@ -97,7 +106,7 @@ header {
   grid-auto-flow: row;
   grid-template-areas: ". imA imB ." ". imA imB ." ". imC imD ." ". imC imD ." ". imE imF ." ". imE imF .";
   margin-bottom: 50px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .contHo {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -171,7 +180,7 @@ header {
   grid-column-gap: 15px;
   grid-row-gap: 20px;
   border-radius: 30px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .container-mvvp {
       display: block;
       width: 100%;
@@ -217,6 +226,9 @@ header {
   justify-content: center; }
 
 /*width*/
+/*Screen sizes*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*HTMLS CON ANIMACIONES Y TRANSFORMACIONES*/
 /*NOSOTROS, AGENCIAS NAVIERAS y REMOLCADORES MARITIMOS*/
 /*NOSOTROS*/
@@ -340,7 +352,7 @@ header {
   -webkit-justify-content: center;
   max-width: max-content;
   margin-left: 20px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -348,7 +360,7 @@ header {
       margin-top: 1rem;
       text-align: center;
       justify-content: center; } }
-  @media (max-width: 480px) {
+  @media (max-width: 575px) {
     .cards {
       display: flex;
       flex-direction: column;
@@ -422,11 +434,11 @@ header {
     .card:hover .card__info {
       background-color: transparent;
       position: relative; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .card {
       overflow: hidden;
       margin-bottom: 50px; } }
-  @media (max-width: 480px) {
+  @media (max-width: 575px) {
     .card {
       margin-right: 20px;
       margin-left: 5px;
@@ -507,6 +519,9 @@ header {
   margin-bottom: 30px; }
 
 /*width*/
+/*Screen sizes*/
+/*y dsp y hice un mixin:*/
+/*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /* footer left*/
 /* footer center*/
 /* footer right*/
@@ -518,7 +533,7 @@ header {
   font-weight: bold;
   font-size: 16px;
   padding: 50px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .footer {
       font-size: 20px; } }
   .footer .footer-left {
@@ -526,7 +541,7 @@ header {
     vertical-align: top;
     width: 33%;
     padding-right: 15px; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .footer .footer-left {
         display: block;
         width: 100%;
@@ -536,7 +551,7 @@ header {
     display: inline-block;
     vertical-align: top;
     width: 30%; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .footer .footer-center {
         display: block;
         width: 100%;
@@ -553,7 +568,7 @@ header {
       line-height: 42px;
       margin: 10px 15px;
       vertical-align: middle; }
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         .footer .footer-center i {
           margin-left: 0; } }
     .footer .footer-center i.fa-envelope {
@@ -576,7 +591,7 @@ header {
     display: inline-block;
     vertical-align: top;
     width: 35%; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .footer .footer-right {
         display: block;
         width: 100%;
@@ -588,7 +603,7 @@ header {
     font-size: 13px;
     font-weight: normal;
     margin: 0; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .footer .about {
         font-size: 18px; } }
     .footer .about span {

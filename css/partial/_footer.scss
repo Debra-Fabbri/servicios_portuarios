@@ -13,7 +13,7 @@
 	font-weight: bold;
 	font-size: $font-size+6;
 	padding: 50px;
-	@include tablet{
+	@include breakpoint(xs){
 		font-size: $font-size*2;
 	}
 	.footer-left {
@@ -21,7 +21,7 @@
 		vertical-align: top;
 		width: 33%;
 		padding-right: 15px;
-		@include tablet{
+		@include breakpoint(xs){
 			display: block;
 			width: 100%;
 			margin-bottom: 40px;
@@ -32,7 +32,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: ($ancho)-20;
-		@include tablet{
+		@include breakpoint(xs){
 			display: block;
 			width: 100%;
 			margin-bottom: 40px;
@@ -49,7 +49,7 @@
 			line-height: 42px;
 			margin: 10px 15px;
 			vertical-align: middle;
-			@include tablet{
+			@include breakpoint(xs){
 				margin-left: 0;
 			}
 		}
@@ -79,7 +79,7 @@
 		display: inline-block;
 		vertical-align: top;
 		width: ($ancho)-15;
-		@include tablet{
+		@include breakpoint(xs){
 			display: block;
 			width: 100%;
 			margin-bottom: 40px;
@@ -92,7 +92,7 @@
 		font-size: ($font-size)+3;
 		font-weight: normal;
 		margin: 0;
-		@include tablet{
+		@include breakpoint(xs){
 			font-size: ($font-size)+8;
 		}
 		span {
