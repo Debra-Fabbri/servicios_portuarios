@@ -37,6 +37,10 @@ header {
     justify-content: center;
     flex-direction: column;
     text-align: center; }
+  @media (max-width: 575px) {
+    header .imgLogo {
+      width: 210px;
+      height: 120px; } }
   header h1 {
     font-size: 50px;
     color: #ffff;
@@ -79,6 +83,10 @@ header {
 
 .col-lg-6 {
   overflow: hidden; }
+  @media (max-width: 991px) {
+    .col-lg-6 {
+      text-align: center;
+      margin-top: 20px; } }
 
 .main .main-right {
   background-color: #5089c6;
@@ -96,7 +104,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  text-align: center; }
 
 .contHo {
   display: grid;
@@ -114,6 +123,11 @@ header {
       gap: 0px 0px;
       grid-auto-flow: row;
       grid-template-areas: ". imA imA ." ". imB imB ." ". imC imC ." ". imD imD ." ". imE imE ." ". imF imF ."; } }
+  @media (max-width: 767px) and (max-width: 575px) {
+    .contHo {
+      overflow: hidden;
+      margin-left: 10px;
+      margin-right: 10px; } }
 
 .imA {
   grid-area: imA;
@@ -151,6 +165,11 @@ header {
   background-color: rgba(31, 31, 31, 0.651);
   opacity: 0;
   transition: opacity 0.3s; }
+  @media (max-width: 575px) {
+    .info {
+      margin-left: 25px;
+      margin-right: 10px;
+      width: 300px; } }
 
 .imagen:hover .info {
   opacity: 1; }
@@ -213,6 +232,10 @@ header {
   align-items: center;
   font-size: 1.2rem;
   font-family: 'Playfair Display', serif; }
+  @media (max-width: 575px) {
+    .table__title {
+      font-size: 16px;
+      text-align: center; } }
 
 .table__header {
   font-family: 'Playfair Display', serif;
@@ -224,6 +247,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 575px) {
+    .table__header, .table__item {
+      font-size: 16px;
+      text-align: center; } }
 
 /*width*/
 /*Screen sizes*/
@@ -352,7 +379,7 @@ header {
   -webkit-justify-content: center;
   max-width: max-content;
   margin-left: 20px; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -651,6 +678,10 @@ header {
 .footer-logo {
   width: 255px;
   height: 150px; }
+  @media (max-width: 575px) {
+    .footer-logo {
+      height: 110px;
+      width: 210px; } }
 
 * {
   margin: 0;

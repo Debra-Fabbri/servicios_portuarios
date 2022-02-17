@@ -150,4 +150,8 @@
 .footer-logo {
 	width: 255px;
 	height: ($alto/2);
+	@include breakpoint(xxs){
+		height: 110px;
+		width: 210px;
+	}
 }
