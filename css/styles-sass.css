@@ -73,10 +73,13 @@ header {
   margin-bottom: 0rem; }
 
 .main .main-left {
-  margin-bottom: 10px;
+  margin-bottom: 82px;
   font-size: 20px; }
+  @media (max-width: 991px) {
+    .main .main-left {
+      margin-bottom: 10px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .main .col-md-12 {
     text-align: center;
     margin-top: 1rem; } }
@@ -90,9 +93,12 @@ header {
 
 .main .main-right {
   background-color: #5089c6;
-  padding: 1rem 1.2rem;
+  padding: 4.9rem 1.2rem;
   font-size: 20px;
   margin-bottom: 0rem; }
+  @media (max-width: 991px) {
+    .main .main-right {
+      padding: 1rem 1.2rem; } }
 
 /*Screen sizes*/
 /*y dsp y hice un mixin:*/
