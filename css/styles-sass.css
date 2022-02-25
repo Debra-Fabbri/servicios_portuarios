@@ -9,6 +9,8 @@ body {
 
 /*width*/
 /*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 /*y dsp y hice un mixin:*/
 /*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*width*/
@@ -56,6 +58,8 @@ header {
 
 /*width*/
 /*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 /*y dsp y hice un mixin:*/
 /*y cuando necesito utilizarlo lo llamo asi directamente :*/
 .parrafo--blanco {
@@ -101,6 +105,8 @@ header {
       padding: 1rem 1.2rem; } }
 
 /*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 /*y dsp y hice un mixin:*/
 /*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*HTMLS CON IMPLEMENTACION DE LAS GRILLAS DE GRID Y CON COMBINACION DE FLEX*/
@@ -163,32 +169,44 @@ header {
   width: 350px;
   height: 250px; }
 
-.info {
-  position: absolute;
-  overflow: hidden;
-  width: 350px;
-  height: 250px;
-  background-color: rgba(31, 31, 31, 0.651);
-  opacity: 0;
-  transition: opacity 0.3s; }
-  @media (max-width: 575px) {
-    .info {
-      margin-left: 25px;
-      margin-right: 10px;
-      width: 300px; } }
+@media (max-width: 991px) {
+  .info {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    background-color: rgba(31, 31, 31, 0.651);
+    text-align: center;
+    color: #fff; }
+  .descripcion {
+    padding: 1rem; } }
 
-.imagen:hover .info {
-  opacity: 1; }
+@media (min-width: 769px) {
+  .info {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    background-color: rgba(31, 31, 31, 0.651);
+    opacity: 0;
+    transition: opacity 0.3s; }
+  .imagen:hover .info {
+    opacity: 1; }
+  .imagen:hover .descripcion {
+    margin-top: 75px; }
+  .descripcion {
+    font-size: 1rem;
+    text-align: center;
+    transition: margin-top 0.4s;
+    color: #fff; } }
 
-.imagen:hover .descripcion {
-  margin-top: 75px; }
-
-.descripcion {
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 200px;
-  transition: margin-top 0.4s;
-  color: #fff; }
+@media (max-width: 330px) {
+  .info {
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 300px; }
+  .descripcion {
+    padding: 1.5rem; } }
 
 /*MISION y VISION*/
 .title-mvvp {
@@ -260,6 +278,8 @@ header {
 
 /*width*/
 /*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 /*y dsp y hice un mixin:*/
 /*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /*HTMLS CON ANIMACIONES Y TRANSFORMACIONES*/
@@ -553,6 +573,8 @@ header {
 
 /*width*/
 /*Screen sizes*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
+/*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 /*y dsp y hice un mixin:*/
 /*y cuando necesito utilizarlo lo llamo asi directamente :*/
 /* footer left*/
@@ -572,8 +594,7 @@ header {
   .footer .footer-left {
     display: inline-block;
     vertical-align: top;
-    width: 33%;
-    padding-right: 15px; }
+    width: 33%; }
     @media (max-width: 767px) {
       .footer .footer-left {
         display: block;
@@ -684,10 +705,16 @@ header {
 .footer-logo {
   width: 255px;
   height: 150px; }
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
     .footer-logo {
-      height: 110px;
+      height: 120px;
       width: 210px; } }
+
+@media (min-width: 769px) {
+  .footer-center {
+    margin-top: 3rem; }
+  .footer-right {
+    margin-top: 5rem; } }
 
 * {
   margin: 0;

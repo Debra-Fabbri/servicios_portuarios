@@ -20,7 +20,6 @@
 		display: inline-block;
 		vertical-align: top;
 		width: 33%;
-		padding-right: 15px;
 		@include breakpoint(xs){
 			display: block;
 			width: 100%;
@@ -150,8 +149,17 @@
 .footer-logo {
 	width: 255px;
 	height: ($alto/2);
-	@include breakpoint(xxs){
-		height: 110px;
+	@include breakpoint(sm){
+		height: 120px;
 		width: 210px;
+	}
+}
+
+@include breakpoint (XS){
+	.footer-center{
+		margin-top: 3rem;
+	}
+	.footer-right{
+		margin-top: 5rem;
 	}
 }

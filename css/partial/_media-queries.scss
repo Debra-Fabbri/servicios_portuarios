@@ -1,14 +1,19 @@
 /*Screen sizes*/
+$xxxs: 330px; /*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html"*/
 
 $xxs: 575px;
 
 $xs: 767px;
+
+$XS: 769px;   /*ESTA VARIABLE ESTA CREADA PARA "nuestra_historia.html" y "footer"*/
 
 $sm: 991px;
 
 $md: 1200px;
 
 $lg: 1400px;
+
+
 
 /*y dsp y hice un mixin:*/
 
@@ -36,6 +41,14 @@ $lg: 1400px;
 
     @else if $class == lg {
         @media (max-width: $lg) { @content; }
+    }
+
+    @else if $class == XS {
+        @media (min-width: $XS) { @content;}
+    }
+
+    @else if $class == xxxs{
+        @media (max-width: $xxxs) { @content; }
     }
 }
 
